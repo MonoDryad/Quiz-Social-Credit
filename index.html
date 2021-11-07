@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 3 - Quiz</title>
+</head>
+<body>
+    <header>
+        <label class="labeltitulo">Exercício 3</label>
+        <label>Quiz-Social Credit</label>
+    </header>
+    <div class="container">
+        <div class="inicio">
+            <button onclick="começar()" id="começarb">Começar</button>
+        </div>
+        <p class="pergunta" id="pergunta"></p>
+        <p class="resultado" id="resultado"></p>
+        <div class="container-escolhas">
+            <label class="final" id="final"></label>
+            <input type="radio" id="inputpresposta1" class="resposta" name="input">
+            <label id="resposta1" class="resposta"></label>
+            <input type="radio" id="inputpresposta2" class="resposta" name="input">
+            <label id="resposta2" class="resposta"></label>
+            <input type="radio" id="inputpresposta3" class="resposta" name="input">
+            <label id="resposta3" class="resposta"></label>
+            <input type="radio" id="inputpresposta4" class="resposta" name="input">
+            <label id="resposta4" class="resposta"></label>
+            <input type="radio" id="inputpresposta5" class="resposta" name="input">
+            <label id="resposta5" class="resposta"></label>
+        </div>
+        <div class="container-botoes">
+            <button onclick="verificarresposta()"  class="botaoverificar" id="verificarresposta" style="align-self:center; display: none;">Estou certo disso!</button>
+            <button onclick="verificarresposta2()"  class="botaoverificar2" id="verificarresposta2" style="align-self:center; display: none;">Estou certo disso!</button>
+            <button onclick="verificarresposta3()"  class="botaoverificar3" id="verificarresposta3" style="align-self:center; display: none;">Estou certo disso!</button>
+            <button onclick="verificarresposta4()"  class="botaoverificar4" id="verificarresposta4" style="align-self:center; display: none;">Estou certo disso!</button>
+            <button onclick="verificarresposta5()"  class="botaoverificar5" id="verificarresposta5" style="align-self:center; display: none;">Estou certo disso!</button>
+            <button onclick="proximaquestao()"  class="proximaquestao" id="proximaquestao" style="align-self:center; display: none;">Próximo</button>
+        </div>
+        <img src="./img/ok.png" alt="Ok!" class="imgok" id="ok">
+        <img src="./img/setaverde.png" alt="Seta Verde" class="imgverde" id="setaverde">
+        <img src="./img/setavermelha.png" alt="Seta Vermelha" class="imgverme" id="setaverme">
+        <img src="./img/rf.gif" alt="Rock face" class="imgrface" id="imgrface">
+        <img src="./img/rd.gif" alt="Rock dw face" class="imgrdwface" id="imgrdwface">
+        <img src="./img/rh.gif" alt="Rock happy" class="imgrhappy" id="imgrhappy">
+        <img src="./img/10693007.png" alt="Emoji scary" class="imgscary" id="imgscary">
+        <img src="./img/emoji.gif" alt="Bye" class="imgbye" id="imgbye">
+        <img src="./img/superidol.gif" alt="Super Idol" class="imgsuperidol" id="imgsuperidol">
+
+    <footer>
+        <input type="text" id="credito" readonly placeholder="Créditos">
+        <label><a href="https://knowyourmeme.com/memes/events/chinas-social-credit-system-15-social-credit">Sobre</a></label>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

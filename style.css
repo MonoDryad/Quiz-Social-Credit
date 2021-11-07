@@ -1,0 +1,173 @@
+body, html {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("./img/32.png");
+    height: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+header{
+    border-bottom: 2px solid #7a0606;
+    background-color:powderblue;
+}
+
+header label{
+    margin-left: 26px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1px;
+}
+
+.labeltitulo{
+    margin-left: 16px;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.inicio{
+    display: block;
+}
+
+.resposta{
+    display: none;
+}
+
+.resultado{
+    display: none;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(228, 212, 190);
+    padding-left: 8px;
+    margin-top: 50px;
+    padding-bottom: 1px;
+    border-top: 2px solid #7a0606;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 70px;
+}
+footer label{
+    text-align: center;
+}
+
+.inicio{
+    padding-top: 16px;
+    text-align: center;
+}
+
+.inicio button{
+    box-shadow: 0px 0px 50px -9px #000000;
+	background:linear-gradient(to bottom, #000000 5%, #00799e 100%);
+	background-color:#000000;
+	border-radius:8px;
+	border:3px solid #1a1a1a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:24px;
+	font-weight:bold;
+	padding:10px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 8px #000000;
+}
+
+.inicio button:hover{
+	background:linear-gradient(to bottom, #00799e 5%, #000000 100%);
+	background-color:#00799e;
+}
+
+.inicio button:active{
+    position:relative;
+	top:1px;
+}
+
+a{
+    font-size: 22px;
+    text-decoration: none;
+}
+
+a:link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.container{
+    text-align: center;
+    color: rgb(228, 212, 190);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: rgb(0, 0, 0) solid 2px;
+    background-color:rgb(46, 36, 36);
+    margin-top: 30px;
+    height: 200px;
+}
+
+a{
+    font-size: 22px;
+    position:absolute;
+    left:20%;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.imgok{
+    display: none;
+}
+
+.imgverde{
+    display: none;
+}
+
+.imgverme{
+    display: none;
+}
+
+.imgrface{
+    display: none;
+}
+
+.imgrdwface{
+    display: none;
+}
+
+.imgrhappy{
+    display: none;
+}
+
+.imgscary{
+    display: none;
+}
+
+.imgbye{
+    display: none;
+}
+
+.imgsuperidol{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        font-size: 14px;
+    }
+}
