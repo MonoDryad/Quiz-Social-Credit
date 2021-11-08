@@ -151,7 +151,7 @@ a{
     display: none;
     width: 422px;
     position: absolute;
-    inset: 45.53% 33%;
+    inset: 42.8% 33%;
 }
 
 .imgrhappy{
@@ -496,3 +496,66 @@ a{
         text-shadow:0px 1px 8px #000000;
     }
 }
+
+@media screen and (max-height: 610px) {
+    .imgok{
+        display: none;
+        position: absolute;
+        inset: 55% 75%;
+        width: 104px;
+    }
+
+    .imgverm{
+        display: none;
+        position: absolute;
+        inset: 55% 0%;
+        width: 104px;
+    }
+
+    .imgrdwface{
+        display: none;
+        position: absolute;
+        inset: 50% 27%;
+        width: 204px;
+    }
+
+    .imgscary{
+        display: none;
+        position: absolute;
+        inset: 55% 75%;
+        width: 104px;
+    }
+
+    .imgbye{
+        display: none;
+        position: absolute;
+        inset: 50% 27%;
+        width: 204px;
+    }
+
+    .imgsuperidol{
+        display: none;
+        position: absolute;
+        inset: 50% 27%;
+        width: 204px;
+    }
+
+    .imgverde{
+        display: none;
+        position: absolute;
+        inset: 55% 0%;
+        width: 104px;
+    }
+
+    .imgrhappy{
+        display: none;
+        position: absolute;
+        inset: 50% 27%;
+        width: 204px;
+    }
+    .imgrface{
+        display: none;
+        position: absolute;
+        inset: 50% 27%;
+        width: 204px;
+    }
