@@ -2,7 +2,7 @@
 const d = new Date()
 let minutos = d.getMinutes()
 let horas = d.getHours()
-let dia = d.getDay()
+let dia = d.getDate()
 let mes = d.getMonth()
 let ano = d.getFullYear()
 console.log(ano + "/" + mes + "/" + dia + " " + horas + ":" + minutos)
@@ -77,7 +77,7 @@ const começar = function () {
     resposta3.style.display = 'inline'
     resposta4.style.display = 'inline'
     resposta5.style.display = 'inline'
-    verificar.style.display = 'block'
+    verificar.style.display = 'initial'
     // Adicionando os textos necessários para a
     // primeira pergunta.
     pergunta.textContent = 'Quantas horas você passa jogando em seu computador em um dia?'
@@ -127,7 +127,7 @@ function proximaquestao(){
             resposta3.style.display = 'inline'
             resposta4.style.display = 'inline'
             resposta5.style.display = 'inline'
-            verificar2.style.display = 'block'
+            verificar2.style.display = 'initial'
 
             // Adicionando os textos necessários para a segunda pergunta.
             pergunta.textContent = 'Quantos filhos você tem/planeja ter?'
@@ -160,7 +160,7 @@ function proximaquestao(){
             resposta1.style.display = 'inline'
             resposta2.style.display = 'inline'
             resposta3.style.display = 'inline'
-            verificar3.style.display = 'block'
+            verificar3.style.display = 'initial'
 
             // Adicionando os textos necessários para a segunda pergunta.
             pergunta.textContent = 'Qual é língua mãe da China?'
@@ -195,7 +195,7 @@ function proximaquestao(){
             resposta3.style.display = 'inline'
             resposta4.style.display = 'inline'
             resposta5.style.display = 'inline'
-            verificar4.style.display = 'block'
+            verificar4.style.display = 'initial'
     
             // Adicionando os textos necessários para a segunda pergunta.
             pergunta.textContent = 'Quem é o nosso governante supremo?'
@@ -231,7 +231,7 @@ function proximaquestao(){
             resposta1.style.display = 'inline'
             resposta2.style.display = 'inline'
             resposta3.style.display = 'inline'
-            verificar5.style.display = 'block'
+            verificar5.style.display = 'initial'
     
             // Adicionando os textos necessários para a segunda pergunta.
             pergunta.textContent = 'Taiwan é um país?'
@@ -274,38 +274,16 @@ function proximaquestao(){
                 case 2:
                     final.innerHTML = 'Você conseguiu um total de ' + parseFloat(creditohtml.value) + ' créditos sociais!'
                     imgsuperidol.style.display = 'inline'
-                    imgsuperidol.style.position = 'absolute'
-                    imgsuperidol.style.top = '50%'
-                    imgsuperidol.style.left = '30%'
-                    imgsuperidol.style.right = '70%'
-                    imgsuperidol.style.bottom = '50%'
-                    imgsuperidol.style.width = '240px'
-                    imgsuperidol.style.height = 'auto'
+                    imgok.style.display = 'inline'
+                    imgverde.style.display = 'inline'
 
                     superidolv.play()
                     break
                 default:
                     final.innerHTML = '你總共有 ' + parseFloat(creditohtml.value) + ' 個社會學分。其執行將在當天進行: ' + execucaohoras + ":" + execucaominutos + " " + execucaodia + "/" + mes + "/" + ano
                     imgscary.style.display = 'inline'
-                    imgscary.style.position = 'absolute'
-                    imgscary.style.top = '50%'
-                    imgscary.style.bottom = '50%'
-                    imgscary.style.left = '65%'
-                    imgscary.style.right = '35%'
                     imgverme.style.display = 'inline'
-                    imgverme.style.position = 'absolute'
-                    imgverme.style.top = '45%'
-                    imgverme.style.left = '0%'
-                    imgverme.style.right = '100%'
-                    imgverme.style.bottom = '55%'
                     imgbye.style.display = 'inline'
-                    imgbye.style.position = 'absolute'
-                    imgbye.style.top = '50%'
-                    imgbye.style.left = '30%'
-                    imgbye.style.right = '70%'
-                    imgbye.style.bottom = '50%'
-                    imgbye.style.width = '240px'
-                    imgbye.style.height = 'auto'
 
                     aaaa.play()
             }
@@ -351,25 +329,8 @@ const verificarresposta = function () {
 
             // imagens
             imgok.style.display = 'inline'
-            imgok.style.position = 'absolute'
-            imgok.style.top = '50%'
-            imgok.style.bottom = '50%'
-            imgok.style.left = '65%'
-            imgok.style.right = '35%'
             imgverde.style.display = 'inline'
-            imgverde.style.position = 'absolute'
-            imgverde.style.top = '45%'
-            imgverde.style.left = '0%'
-            imgverde.style.right = '100%'
-            imgverde.style.bottom = '55%'
             imgrhappy.style.display = 'inline'
-            imgrhappy.style.position = 'absolute'
-            imgrhappy.style.top = '50%'
-            imgrhappy.style.left = '30%'
-            imgrhappy.style.right = '70%'
-            imgrhappy.style.bottom = '50%'
-            imgrhappy.style.width = '240px'
-            imgrhappy.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -382,25 +343,8 @@ const verificarresposta = function () {
 
             // imagens
             imgscary.style.display = 'inline'
-            imgscary.style.position = 'absolute'
-            imgscary.style.top = '50%'
-            imgscary.style.bottom = '50%'
-            imgscary.style.left = '65%'
-            imgscary.style.right = '35%'
             imgverme.style.display = 'inline'
-            imgverme.style.position = 'absolute'
-            imgverme.style.top = '45%'
-            imgverme.style.left = '0%'
-            imgverme.style.right = '100%'
-            imgverme.style.bottom = '55%'
             imgr.style.display = 'inline'
-            imgr.style.position = 'absolute'
-            imgr.style.top = '50%'
-            imgr.style.left = '30%'
-            imgr.style.right = '70%'
-            imgr.style.bottom = '50%'
-            imgr.style.width = '240px'
-            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -410,7 +354,7 @@ const verificarresposta = function () {
             resultado.textContent = 'Você ganhou ' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 2
             break
         default:
@@ -419,7 +363,7 @@ const verificarresposta = function () {
             resultado.textContent = 'Você recebeu ' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 2
     }
     console.log('Debug: Fim Primeira pergunta - ', credito)
@@ -464,25 +408,8 @@ const verificarresposta2 = function () {
 
                         // imagens
             imgok.style.display = 'inline'
-            imgok.style.position = 'absolute'
-            imgok.style.top = '50%'
-            imgok.style.bottom = '50%'
-            imgok.style.left = '65%'
-            imgok.style.right = '35%'
             imgverde.style.display = 'inline'
-            imgverde.style.position = 'absolute'
-            imgverde.style.top = '45%'
-            imgverde.style.left = '0%'
-            imgverde.style.right = '100%'
-            imgverde.style.bottom = '55%'
             imgrhappy.style.display = 'inline'
-            imgrhappy.style.position = 'absolute'
-            imgrhappy.style.top = '50%'
-            imgrhappy.style.left = '30%'
-            imgrhappy.style.right = '70%'
-            imgrhappy.style.bottom = '50%'
-            imgrhappy.style.width = '240px'
-            imgrhappy.style.height = 'auto'
             break
         case 'extremoerrado':
             // adicionando o valor ganho por acertar
@@ -493,25 +420,8 @@ const verificarresposta2 = function () {
 
             // imagens
             imgscary.style.display = 'inline'
-            imgscary.style.position = 'absolute'
-            imgscary.style.top = '50%'
-            imgscary.style.bottom = '50%'
-            imgscary.style.left = '65%'
-            imgscary.style.right = '35%'
             imgverme.style.display = 'inline'
-            imgverme.style.position = 'absolute'
-            imgverme.style.top = '45%'
-            imgverme.style.left = '0%'
-            imgverme.style.right = '100%'
-            imgverme.style.bottom = '55%'
             imgrdw.style.display = 'inline'
-            imgrdw.style.position = 'absolute'
-            imgrdw.style.top = '50%'
-            imgrdw.style.left = '30%'
-            imgrdw.style.right = '70%'
-            imgrdw.style.bottom = '50%'
-            imgrdw.style.width = '240px'
-            imgrdw.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -522,25 +432,8 @@ const verificarresposta2 = function () {
 
             // imagens
             imgscary.style.display = 'inline'
-            imgscary.style.position = 'absolute'
-            imgscary.style.top = '50%'
-            imgscary.style.bottom = '50%'
-            imgscary.style.left = '65%'
-            imgscary.style.right = '35%'
             imgverme.style.display = 'inline'
-            imgverme.style.position = 'absolute'
-            imgverme.style.top = '45%'
-            imgverme.style.left = '0%'
-            imgverme.style.right = '100%'
-            imgverme.style.bottom = '55%'
             imgr.style.display = 'inline'
-            imgr.style.position = 'absolute'
-            imgr.style.top = '50%'
-            imgr.style.left = '30%'
-            imgr.style.right = '70%'
-            imgr.style.bottom = '50%'
-            imgr.style.width = '240px'
-            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -550,7 +443,7 @@ const verificarresposta2 = function () {
             resultado.textContent = 'Você ganhou ' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 3
             break
         default:
@@ -559,7 +452,7 @@ const verificarresposta2 = function () {
             resultado.textContent = 'Você recebeu -' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 3
     }
     console.log('Debug: Fim Segunda pergunta - ', credito)
@@ -603,25 +496,8 @@ const verificarresposta3 = function () {
 
             // imagens
             imgok.style.display = 'inline'
-            imgok.style.position = 'absolute'
-            imgok.style.top = '50%'
-            imgok.style.bottom = '50%'
-            imgok.style.left = '65%'
-            imgok.style.right = '35%'
             imgverde.style.display = 'inline'
-            imgverde.style.position = 'absolute'
-            imgverde.style.top = '45%'
-            imgverde.style.left = '0%'
-            imgverde.style.right = '100%'
-            imgverde.style.bottom = '55%'
             imgrhappy.style.display = 'inline'
-            imgrhappy.style.position = 'absolute'
-            imgrhappy.style.top = '50%'
-            imgrhappy.style.left = '30%'
-            imgrhappy.style.right = '70%'
-            imgrhappy.style.bottom = '50%'
-            imgrhappy.style.width = '240px'
-            imgrhappy.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -634,25 +510,8 @@ const verificarresposta3 = function () {
 
             // imagens
             imgscary.style.display = 'inline'
-            imgscary.style.position = 'absolute'
-            imgscary.style.top = '50%'
-            imgscary.style.bottom = '50%'
-            imgscary.style.left = '65%'
-            imgscary.style.right = '35%'
             imgverme.style.display = 'inline'
-            imgverme.style.position = 'absolute'
-            imgverme.style.top = '45%'
-            imgverme.style.left = '0%'
-            imgverme.style.right = '100%'
-            imgverme.style.bottom = '55%'
             imgr.style.display = 'inline'
-            imgr.style.position = 'absolute'
-            imgr.style.top = '50%'
-            imgr.style.left = '30%'
-            imgr.style.right = '70%'
-            imgr.style.bottom = '50%'
-            imgr.style.width = '240px'
-            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -662,7 +521,7 @@ const verificarresposta3 = function () {
             resultado.textContent = 'Você ganhou ' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 4
             break
         default:
@@ -671,7 +530,7 @@ const verificarresposta3 = function () {
             resultado.textContent = 'Você recebeu -' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 4
     }
     console.log('Debug: Fim Terceira pergunta - ', credito)
@@ -717,25 +576,8 @@ const verificarresposta4 = function () {
 
             // imagens
             imgok.style.display = 'inline'
-            imgok.style.position = 'absolute'
-            imgok.style.top = '50%'
-            imgok.style.bottom = '50%'
-            imgok.style.left = '65%'
-            imgok.style.right = '35%'
             imgverde.style.display = 'inline'
-            imgverde.style.position = 'absolute'
-            imgverde.style.top = '45%'
-            imgverde.style.left = '0%'
-            imgverde.style.right = '100%'
-            imgverde.style.bottom = '55%'
             imgrhappy.style.display = 'inline'
-            imgrhappy.style.position = 'absolute'
-            imgrhappy.style.top = '50%'
-            imgrhappy.style.left = '30%'
-            imgrhappy.style.right = '70%'
-            imgrhappy.style.bottom = '50%'
-            imgrhappy.style.width = '240px'
-            imgrhappy.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -750,25 +592,8 @@ const verificarresposta4 = function () {
 
             // imagens
             imgscary.style.display = 'inline'
-            imgscary.style.position = 'absolute'
-            imgscary.style.top = '50%'
-            imgscary.style.bottom = '50%'
-            imgscary.style.left = '65%'
-            imgscary.style.right = '35%'
             imgverme.style.display = 'inline'
-            imgverme.style.position = 'absolute'
-            imgverme.style.top = '45%'
-            imgverme.style.left = '0%'
-            imgverme.style.right = '100%'
-            imgverme.style.bottom = '55%'
             imgr.style.display = 'inline'
-            imgr.style.position = 'absolute'
-            imgr.style.top = '50%'
-            imgr.style.left = '30%'
-            imgr.style.right = '70%'
-            imgr.style.bottom = '50%'
-            imgr.style.width = '240px'
-            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -778,7 +603,7 @@ const verificarresposta4 = function () {
             resultado.textContent = 'Você ganhou ' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 5
             break
         default:
@@ -787,7 +612,7 @@ const verificarresposta4 = function () {
             resultado.textContent = 'Você recebeu -' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 5
     }
     console.log('Debug: Fim Quarta pergunta - ', credito)
@@ -831,25 +656,8 @@ const verificarresposta5 = function () {
 
             // imagens
             imgok.style.display = 'inline'
-            imgok.style.position = 'absolute'
-            imgok.style.top = '50%'
-            imgok.style.bottom = '50%'
-            imgok.style.left = '65%'
-            imgok.style.right = '35%'
             imgverde.style.display = 'inline'
-            imgverde.style.position = 'absolute'
-            imgverde.style.top = '45%'
-            imgverde.style.left = '0%'
-            imgverde.style.right = '100%'
-            imgverde.style.bottom = '55%'
             imgrhappy.style.display = 'inline'
-            imgrhappy.style.position = 'absolute'
-            imgrhappy.style.top = '50%'
-            imgrhappy.style.left = '30%'
-            imgrhappy.style.right = '70%'
-            imgrhappy.style.bottom = '50%'
-            imgrhappy.style.width = '240px'
-            imgrhappy.style.height = 'auto'
             break
         case 'impossivel':
             // adicionando o valor ganho por acertar
@@ -864,25 +672,8 @@ const verificarresposta5 = function () {
 
             // imagens
             imgscary.style.display = 'inline'
-            imgscary.style.position = 'absolute'
-            imgscary.style.top = '50%'
-            imgscary.style.bottom = '50%'
-            imgscary.style.left = '65%'
-            imgscary.style.right = '35%'
             imgverme.style.display = 'inline'
-            imgverme.style.position = 'absolute'
-            imgverme.style.top = '45%'
-            imgverme.style.left = '0%'
-            imgverme.style.right = '100%'
-            imgverme.style.bottom = '55%'
             imgrdw.style.display = 'inline'
-            imgrdw.style.position = 'absolute'
-            imgrdw.style.top = '50%'
-            imgrdw.style.left = '30%'
-            imgrdw.style.right = '70%'
-            imgrdw.style.bottom = '50%'
-            imgrdw.style.width = '240px'
-            imgrdw.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -895,25 +686,8 @@ const verificarresposta5 = function () {
 
             // imagens
             imgok.style.display = 'inline'
-            imgok.style.position = 'absolute'
-            imgok.style.top = '50%'
-            imgok.style.bottom = '50%'
-            imgok.style.left = '65%'
-            imgok.style.right = '35%'
             imgverde.style.display = 'inline'
-            imgverde.style.position = 'absolute'
-            imgverde.style.top = '45%'
-            imgverde.style.left = '0%'
-            imgverde.style.right = '100%'
-            imgverde.style.bottom = '55%'
             imgrhappy.style.display = 'inline'
-            imgrhappy.style.position = 'absolute'
-            imgrhappy.style.top = '50%'
-            imgrhappy.style.left = '30%'
-            imgrhappy.style.right = '70%'
-            imgrhappy.style.bottom = '50%'
-            imgrhappy.style.width = '240px'
-            imgrhappy.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -923,7 +697,7 @@ const verificarresposta5 = function () {
             resultado.textContent = 'Você ganhou ' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 6
             break
         default:
@@ -932,7 +706,7 @@ const verificarresposta5 = function () {
             resultado.textContent = 'Você recebeu -' + credito + " créditos sociais!"
 
             // adicionando o botão para ativar a nova função
-            proximo.style.display = 'block'
+            proximo.style.display = 'initial'
             qpergunta = 6
             vineboombass.play()
     }

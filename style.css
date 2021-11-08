@@ -76,16 +76,14 @@ footer label{
 	padding:10px 76px;
 	text-decoration:none;
 	text-shadow:0px 1px 8px #000000;
+    position: absolute;
+    top: 34.5%;
+    left: 39.27%;
 }
 
 .inicio button:hover{
 	background:linear-gradient(to bottom, #00799e 5%, #000000 100%);
 	background-color:#00799e;
-}
-
-.inicio button:active{
-    position:relative;
-	top:1px;
 }
 
 a{
@@ -125,49 +123,193 @@ a:active {
 a{
     font-size: 22px;
     position:absolute;
-    left:20%;
+    left: 48.5%;
     bottom: 0;
     text-decoration: none;
 }
 
 .imgok{
     display: none;
+    width: 214px;
+    position: absolute;
+    inset: 50% 81%;
 }
 
 .imgverde{
     display: none;
+    position: absolute;
+    inset: 45% 0%;
 }
 
 .imgverme{
     display: none;
-}
-
-.imgrface{
-    display: none;
+    position: absolute;
+    inset: 45% 0%;
 }
 
 .imgrdwface{
     display: none;
+    width: 422px;
+    position: absolute;
+    inset: 42.8% 33%;
 }
 
 .imgrhappy{
     display: none;
-}
-
-.imgscary{
-    display: none;
+    width: 308px;
+    position: absolute;
+    inset: 42.8% 37.6%;
 }
 
 .imgbye{
     display: none;
+    width: 304px;
+    position: absolute;
+    inset: 42.8% 37.6%;
+}
+
+.imgscary{
+    display: none;
+    position: absolute;
+    inset: 50% 81%;
 }
 
 .imgsuperidol{
     display: none;
+    width: 304px;
+    position: absolute;
+    inset: 42.8% 37.6%;
+}
+
+.imgrface{
+    display: none;
+    width: 304px;
+    position: absolute;
+    inset: 42.8% 37.6%;
+}
+
+.proximaquestao{
+    position: absolute;
+    top: 34.5%;
+    left: 39.27%;
+    box-shadow: 0px 0px 50px -9px #000000;
+	background:linear-gradient(to bottom, #000000 5%, #00799e 100%);
+	background-color:#000000;
+	border-radius:8px;
+	border:3px solid #1a1a1a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:24px;
+	font-weight:bold;
+	padding:10px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 8px #000000;
+}
+
+.proximaquestao:hover .botaoverificar:hover .botaoverificar2:hover .botaoverificar3:hover .botaoverificar4:hover .botaoverificar5:hover{
+	background:linear-gradient(to bottom, #00799e 5%, #000000 100%);
+	background-color:#00799e;
+}
+
+.botaoverificar, .botaoverificar2, .botaoverificar3, .botaoverificar4, .botaoverificar5{
+    position: absolute;
+    top: 34.5%;
+    left: 34.5%;
+    box-shadow: 0px 0px 50px -9px #000000;
+	background:linear-gradient(to bottom, #000000 5%, #00799e 100%);
+	background-color:#000000;
+	border-radius:8px;
+	border:3px solid #1a1a1a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:24px;
+	font-weight:bold;
+	padding:10px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 8px #000000;
 }
 
 @media screen and (max-width: 650px) {
     .container{
         font-size: 14px;
+    }
+
+    .imgok, .imgverde, .imgverm, .imgrdwface, .imgrhappy, .imgscary, .imgbye, .imgsuperidol{
+        display: none;
+    }
+
+    .imgrhappy{
+        position: absolute;
+        inset: 30% 20%;
+        width: 104px;
+    }
+
+    .inicio button{
+        position: absolute;
+        top: 40.5%;
+        left: 26.27%;
+        box-shadow: 0px 0px 50px -9px #000000;
+        background:linear-gradient(to bottom, #000000 5%, #00799e 100%);
+        background-color:#000000;
+        border-radius:8px;
+        border:3px solid #1a1a1a;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Verdana;
+        font-size:13px;
+        font-weight:bold;
+        padding:10px 76px;
+        text-decoration:none;
+        text-shadow:0px 1px 8px #000000;
+    }
+
+    .proximaquestao{
+        position: absolute;
+        top: 41.5%;
+        left: 26.27%;
+        box-shadow: 0px 0px 50px -9px #000000;
+        background:linear-gradient(to bottom, #000000 5%, #00799e 100%);
+        background-color:#000000;
+        border-radius:8px;
+        border:3px solid #1a1a1a;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Verdana;
+        font-size:13px;
+        font-weight:bold;
+        padding:10px 76px;
+        text-decoration:none;
+        text-shadow:0px 1px 8px #000000;
+    }
+    
+    .proximaquestao:hover .botaoverificar:hover .botaoverificar2:hover .botaoverificar3:hover .botaoverificar4:hover .botaoverificar5:hover{
+        background:linear-gradient(to bottom, #00799e 5%, #000000 100%);
+        background-color:#00799e;
+    }
+    
+    .botaoverificar, .botaoverificar2, .botaoverificar3, .botaoverificar4, .botaoverificar5{
+        position: absolute;
+        top: 40.5%;
+        left: 15.5%;
+        box-shadow: 0px 0px 50px -9px #000000;
+        background:linear-gradient(to bottom, #000000 5%, #00799e 100%);
+        background-color:#000000;
+        border-radius:8px;
+        border:3px solid #1a1a1a;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Verdana;
+        font-size:13px;
+        font-weight:bold;
+        padding:10px 76px;
+        text-decoration:none;
+        text-shadow:0px 1px 8px #000000;
     }
 }
